@@ -12,7 +12,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 274px 0 256px;
+  padding: 49px 0 256px;
 }
 
 header h2 {
@@ -22,9 +22,63 @@ header h2 {
 }
 
 .nav {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  margin-bottom: 274px;
+  margin-left: 15%;
+  gap: 25%;
 }
+
+.nav__list {
+  display: flex;
+  gap: 38px;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+}
+
+.nav__link.nav__brand {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.1px;
+}
+
+.nav__link:link {
+  text-decoration: none;
+}
+.nav__link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__logo {
+  margin-bottom: 13px;
+}
+
+.header__main-title {
+  margin-bottom: 42px;
+}
+
+.section-headline__paragraphs {
+  display: flex;
+  gap: 83px;
+  text-align: left;
+  justify-content: space-around;
+  margin: 0 150px;
+  margin-bottom: 51px;
+}
+
+.section-headline__paragraphs p {
+  width: 415px;
+}
+
+
 
 h1 {
   font-family: "Oswald", sans-serif;
@@ -51,7 +105,7 @@ h1 {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 87px 120px 98px 97px;
+  padding: 87px 0 98px;
 }
 
 .section-headline h3 {
@@ -143,15 +197,19 @@ h1 {
 footer {
   background-color: #464547;
   padding-left: 140px;
+  padding-right: 70px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.4);
-  padding-bottom: 38px;
-  padding-top: 21px;
+  padding-bottom: 78px;
+  padding-top: 39px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
-.logo-footer {
+.footer__logo-footer {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -162,11 +220,29 @@ footer {
   padding-bottom: 12px;
 }
 
-address a:link {
+.footer__address {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.footer__link {
+  padding-top: 15px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.footer__link:link {
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
 }
 
-address a:visited {
+.footer__link:visited {
   color: rgba(255, 255, 255, 0.4);
 }
+
+.footer__rights {
+  padding-top: 15px;
+  grid-column: 6/8;
+  grid-row: 2;
+}
+

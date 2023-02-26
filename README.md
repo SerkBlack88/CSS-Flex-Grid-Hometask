@@ -2,8 +2,8 @@
 
 ### HTML and CSS
 
-### CSS-Essentials-HomeTask
+### CSS-Flex-Grid-HomeTask
 
-This is the code of the CSS-Essentials-HomeTask.
+This is the code of the CSS-Flex-Grid-HomeTask.
 
 ### Created by: Sergio Zapata
